@@ -110,7 +110,7 @@ if __name__ == '__main__':
         print('Error: context is not matched expanded/notexpanded.')
         sys.exit(1)
     elif judged == 0:
-        new_parsed = expand(parsed, 12)
+        new_parsed = expand(parsed, num)
     elif judged == 1:
         new_parsed = unexpand(parsed)
     new_sql = unparse_sql(new_parsed)
